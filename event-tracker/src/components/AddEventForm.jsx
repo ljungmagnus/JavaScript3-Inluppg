@@ -1,8 +1,31 @@
-import React from 'react'
+import { useState } from 'react'
 
 const AddEventForm = () => {
+  
+  const [formData, setFormData] = useState({
+    title: '',
+    date: '',
+    time: '',
+    desc: ''
+  })
+
+  const onChange = e => {
+    setFormData(state => ({
+      ...state,
+      [e.target.name]: e.target.value
+    }))
+  }
+  
+  const handleSub = e => {
+    e.preventDefault()
+   
+    console.log(formData)
+
+
+  }
+  
   return (
-    <form className='add-event-form container'>
+    <form onSubmit={handleSub} className='add-event-form container'>
       
       <div className='event-header'>
         <button className='dropbtn'></button>
@@ -11,27 +34,26 @@ const AddEventForm = () => {
       </div>
       <div className="input-group">
         <label htmlFor="title">Title:</label>
-        <input className='form-control' type="text" name='titel' id='title'/>
+        <input value={formData.title} onChange={onChange} className='form-control' type="text" name='title' id='title'/>
       </div>
       <div className='d-flex'>
         <div className="input-group w50">
           <label htmlFor="date">Date:</label>
-          <input className='form-control' type="date" name='date' id='date'  />
+          <input value={formData.date} onChange={onChange} className='form-control' type="date" name='date' id='date'  />
         </div>
         <div className="input-group w50">
           <label htmlFor="time">Time:</label>
-          <input className='form-control' type="time" name='time' id='time' />
+          <input value={formData.time} onChange={onChange} className='form-control' type="time" name='time' id='time' />
         </div>
       </div>
       <div className="input-group">
         <label htmlFor="desc">Event description:</label>
-        <textarea className='form-control' name="desc" id="desc" cols="30" rows="10"></textarea>
+        <textarea value={formData.desc} onChange={onChange} className='form-control' name="desc" id="desc" cols="30" rows="10"></textarea>
       </div>
       <div className='add-event'>
         <button className='btn btn-outline'>Add Event</button>
       </div>
-      
-
+           
     </form>
   )
 }
