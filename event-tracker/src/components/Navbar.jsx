@@ -1,11 +1,11 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <nav className='navbar'>
-      <h1 className='nav-brand'>My events</h1>
+      <Link to='/' className='nav-brand'>My events</Link>
       <ul className='nav-links'>
-        <li className='nav-link'>+ Add new event</li>
+        <Link to='/create' className='nav-link'>+ Add new event</Link>
         <li className='nav-link'><i className="fa-solid fa-circle-user"></i></li>
       </ul>
     </nav>

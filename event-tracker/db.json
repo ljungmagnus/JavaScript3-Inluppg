@@ -1,0 +1,33 @@
+{
+  "users": [],
+  "events": [
+    {
+      "id": 1,
+      "title": "Event 1",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, cumque similique! Perferendis hic et eligendi provident ullam modi rerum, aperiam dignissimos, qui ratione officiis vero sit debitis non. Praesentium, maxime?",
+      "date": "2022-05-06",
+      "time": "13:44"
+    },
+    {
+      "id": 2,
+      "title": "Event 2",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, cumque similique! Perferendis hic et eligendi provident ullam modi rerum, aperiam dignissimos, qui ratione officiis vero sit debitis non. Praesentium, maxime?",
+      "date": "2022-05-06",
+      "time": "13:45"
+    },
+    {
+      "id": 3,
+      "title": "Event 3",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, cumque similique! Perferendis hic et eligendi provident ullam modi rerum, aperiam dignissimos, qui ratione officiis vero sit debitis non. Praesentium, maxime?",
+      "date": "2022-05-06",
+      "time": "13:46"
+    },
+    {
+      "title": "Mitt första event",
+      "date": "2022-05-13",
+      "time": "17:20",
+      "description": "hoppas det funkar men det tror jag",
+      "id": 4
+    }
+  ]
+}

@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import axios from 'axios'
+import { useState, useCallback } from 'react'
 
 const AddEventForm = () => {
   
@@ -6,8 +7,10 @@ const AddEventForm = () => {
     title: '',
     date: '',
     time: '',
-    desc: ''
+    description: ''
   })
+
+  const url = 'http://localhost:8080/events'
 
   const onChange = e => {
     setFormData(state => ({
@@ -16,11 +19,35 @@ const AddEventForm = () => {
     }))
   }
   
+  const addNewEvent = useCallback(async (event) => {
+
+    const res = await axios.post(url, event)
+    console.log(res.status, res.statusText)
+
+  },[url])
+
+  const validateForm = (formData) => {
+    
+        
+    if(formData.title.trim() === '') {
+      return false
+    }
+
+    
+    return true
+    
+  }
+
   const handleSub = e => {
     e.preventDefault()
    
-    console.log(formData)
-
+    // console.log(formData)
+    const valid = validateForm(formData)
+    console.log('Valid form: ' + valid)
+    
+    if(valid) {
+      addNewEvent(formData)
+    }
 
   }
   
@@ -28,9 +55,9 @@ const AddEventForm = () => {
     <form onSubmit={handleSub} className='add-event-form container'>
       
       <div className='event-header'>
-        <button className='dropbtn'></button>
+        <button type="button" className='dropbtn'></button>
         <h1>Add Event</h1>
-        <button className='btn btn-sm'>x</button>
+        <button type="button" className='btn btn-sm'>x</button>
       </div>
       <div className="input-group">
         <label htmlFor="title">Title:</label>
@@ -48,7 +75,7 @@ const AddEventForm = () => {
       </div>
       <div className="input-group">
         <label htmlFor="desc">Event description:</label>
-        <textarea value={formData.desc} onChange={onChange} className='form-control' name="desc" id="desc" cols="30" rows="10"></textarea>
+        <textarea value={formData.description} onChange={onChange} className='form-control' name="description" id="desc" cols="30" rows="10"></textarea>
       </div>
       <div className='add-event'>
         <button className='btn btn-outline'>Add Event</button>
