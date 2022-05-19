@@ -28,6 +28,34 @@
       "time": "17:20",
       "description": "hoppas det funkar men det tror jag",
       "id": 4
+    },
+    {
+      "title": "Mitt andra event",
+      "date": "2022-05-19",
+      "time": "12:24",
+      "description": "Dett är mit andra event som jag skapar nåågra dagar senare",
+      "id": 5
+    },
+    {
+      "title": "Test4",
+      "date": "2022-05-18",
+      "time": "14:16",
+      "description": "tror det funker",
+      "id": 6
+    },
+    {
+      "title": "Test 5",
+      "date": "2022-05-20",
+      "time": "14:47",
+      "description": "hej hopp nnu ska det fungera",
+      "id": 7
+    },
+    {
+      "title": "Test 8",
+      "date": "2022-05-20",
+      "time": "15:52",
+      "description": "hej ehje",
+      "id": 8
     }
   ]
 }

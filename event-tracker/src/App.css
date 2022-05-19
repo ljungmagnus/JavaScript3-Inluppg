@@ -96,6 +96,7 @@ html, body {
   justify-content: space-between;
   align-items: flex-start;
   border-bottom: 1px solid #cecece;
+  margin-bottom: 2rem;
 }
 .event-header h1 {
   padding-bottom: 1rem;
@@ -109,31 +110,37 @@ html, body {
   border-radius: .2em;
 }
 .input-group {
-  margin-top: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 .form-control {
+  margin-top: .5rem;
   width: 100%;
   border: none;
   outline: none;
-  padding: .5rem;
+  padding: 0 .5rem;
   border-bottom: 1px solid #cecece;
   font-size: 1rem;
+  min-height: 1.8rem;
 }
 .input-group textarea {
   border: 1px solid #cecece;
   resize: none;
   margin-top: .2rem;
-  margin-bottom: 1rem ;
-}
-.w50 {
-  width: 50%;
 }
 .d-flex {
   display: flex;
+  justify-content: space-between;
   gap: 1rem;
+  margin-bottom: 1rem;
+  
 }
 .add-event {
+  margin-top: 1rem;
   text-align: end;
+}
+.error-message {
+  color: red;
 }
 
 @media (min-width: 576px) {
