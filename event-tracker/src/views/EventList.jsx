@@ -5,7 +5,6 @@ import axios from 'axios'
 const EventList = () => {
   
   const [events, setEvents] = useState([])
-  // const [url, setUrl] = useState('http://localhost:8080/events')
   const url = 'http://localhost:8080/events'
   const cmd = 'json-server db.json -m ./node_modules/json-server-auth --port 8080'
   

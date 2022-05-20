@@ -23,39 +23,11 @@
       "time": "13:46"
     },
     {
-      "title": "Mitt första event",
-      "date": "2022-05-13",
-      "time": "17:20",
-      "description": "hoppas det funkar men det tror jag",
+      "title": "Inlämning uppgift JavaScript 3",
+      "date": "2022-05-29",
+      "time": "23:55",
+      "description": "Du har fram till den 29/5-2022 kl. 23.55 på dig att lämna in uppgiften. Inlämningen sker genom att\ndu skriver en kommentar med din github-länk till ditt projekt här under inlämningen. Se till att din\nrepository är publik under tiden från att du lämnar in uppgiften till att du har fått ett betyg i ämnet.\nVIKTIGT! Se till att din github-länk faktiskt fungerar och att det finns innehåll på din repository och att\ndet är tillgängligt.\nSkriv ut i din repositorys readme eller i kommentaren där du lämnar in din uppgift hur jag gör för att\nstarta igång applikationen och se till att din databas är upplåst så jag kommer åt den från min ipadress.",
       "id": 4
-    },
-    {
-      "title": "Mitt andra event",
-      "date": "2022-05-19",
-      "time": "12:24",
-      "description": "Dett är mit andra event som jag skapar nåågra dagar senare",
-      "id": 5
-    },
-    {
-      "title": "Test4",
-      "date": "2022-05-18",
-      "time": "14:16",
-      "description": "tror det funker",
-      "id": 6
-    },
-    {
-      "title": "Test 5",
-      "date": "2022-05-20",
-      "time": "14:47",
-      "description": "hej hopp nnu ska det fungera",
-      "id": 7
-    },
-    {
-      "title": "Test 8",
-      "date": "2022-05-20",
-      "time": "15:52",
-      "description": "hej ehje",
-      "id": 8
     }
   ]
 }

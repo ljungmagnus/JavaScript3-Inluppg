@@ -16,10 +16,12 @@ html, body {
   border-radius: 1em;
   padding: .4em .8em;
   cursor: pointer;
+  
 }
 .btn-outline {
   border: 1px solid #cecece;
   font-weight: bold;
+  transition: 0.3s ease;
 }
 .btn-sm {
   border-radius: .5em;
@@ -32,6 +34,9 @@ html, body {
 }
 .btn-outline:hover {
   background-color: #cecece50;
+}
+.btn-outline:active {
+  box-shadow: 0 0 0 3px #cecece50;
 }
 
 .navbar {
@@ -50,7 +55,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 35%;
   list-style: none;
 }
 .nav-link {
@@ -84,6 +89,13 @@ html, body {
   align-items: center;
   width: 100%;
   padding: 1rem 1rem;
+}
+.event-info:hover {
+  background-color: #cecece50;
+}
+.event-title {
+  text-decoration: none;
+  color: black;
 }
 .add-event-form {
   border: 1px solid #cecece;
@@ -142,10 +154,38 @@ html, body {
 .error-message {
   color: red;
 }
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-title i {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.showcase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background-color: #ff0000;
+  border-radius: .5rem 0 0 0.5rem;
+  color: #fff;
+}
+.card-content {
+  flex: 2;
+  padding: 1rem;
+}
+.card-body {
+  padding-block: 1rem;
+}
+
+
 
 @media (min-width: 576px) {
   .nav-links {
-    width: 40%;
+    width: 30%;
   }
 }
 @media (min-width: 992px) {
