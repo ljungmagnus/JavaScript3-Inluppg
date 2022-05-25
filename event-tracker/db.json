@@ -2,32 +2,44 @@
   "users": [],
   "events": [
     {
-      "id": 1,
-      "title": "Event 1",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, cumque similique! Perferendis hic et eligendi provident ullam modi rerum, aperiam dignissimos, qui ratione officiis vero sit debitis non. Praesentium, maxime?",
-      "date": "2022-05-06",
-      "time": "13:44"
+      "title": "Svinganalys",
+      "date": "2022-05-25",
+      "time": "16:00",
+      "description": "Ängsö gk. Svinganalys för att prova ut nya järnklubbor",
+      "timestamp": 1653487200000,
+      "id": 1
     },
     {
-      "id": 2,
-      "title": "Event 2",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, cumque similique! Perferendis hic et eligendi provident ullam modi rerum, aperiam dignissimos, qui ratione officiis vero sit debitis non. Praesentium, maxime?",
-      "date": "2022-05-06",
-      "time": "13:45"
-    },
-    {
-      "id": 3,
-      "title": "Event 3",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, cumque similique! Perferendis hic et eligendi provident ullam modi rerum, aperiam dignissimos, qui ratione officiis vero sit debitis non. Praesentium, maxime?",
-      "date": "2022-05-06",
-      "time": "13:46"
-    },
-    {
-      "title": "Inlämning uppgift JavaScript 3",
+      "title": "Inlämning JavaScript 3",
       "date": "2022-05-29",
       "time": "23:55",
-      "description": "Du har fram till den 29/5-2022 kl. 23.55 på dig att lämna in uppgiften. Inlämningen sker genom att\ndu skriver en kommentar med din github-länk till ditt projekt här under inlämningen. Se till att din\nrepository är publik under tiden från att du lämnar in uppgiften till att du har fått ett betyg i ämnet.\nVIKTIGT! Se till att din github-länk faktiskt fungerar och att det finns innehåll på din repository och att\ndet är tillgängligt.\nSkriv ut i din repositorys readme eller i kommentaren där du lämnar in din uppgift hur jag gör för att\nstarta igång applikationen och se till att din databas är upplåst så jag kommer åt den från min ipadress.",
+      "description": "Du har fram till den 29/5-2022 kl. 23.55\npå dig att lämna in uppgiften. Inlämningen sker genom attdu skriver en kommentar med din github-länk till ditt projekt här under inlämningen. Se till att dinrepository är publik under tiden från att du lämnar in uppgiften till att du har fått ett betyg i ämnet.",
+      "timestamp": 1653861300000,
+      "id": 2
+    },
+    {
+      "title": "Skåne",
+      "date": "2022-05-26",
+      "time": "10:00",
+      "description": "Åka ner till Skåne över Kristi himmelsfärd för att träffa mamma och kusinen",
+      "timestamp": 1653552000000,
+      "id": 3
+    },
+    {
+      "title": "Test",
+      "date": "2022-05-25",
+      "time": "10:52",
+      "description": "testning testning...",
+      "timestamp": 1653468720000,
       "id": 4
+    },
+    {
+      "title": "Test 2",
+      "date": "2022-05-25",
+      "time": "10:58",
+      "description": "testar navigate",
+      "timestamp": 1653469080000,
+      "id": 5
     }
   ]
 }

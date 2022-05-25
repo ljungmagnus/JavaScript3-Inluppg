@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import moment from 'moment'
+import 'moment/locale/sv'
 
 const Event = ({event}) => {
   
@@ -13,7 +14,8 @@ const Event = ({event}) => {
           <Link to={`/event/${event.id}`} className='event-title'>
             <h3>{event.title}</h3>
           </Link> 
-          <p>Due: {event.date} at {event.time}</p>
+          {/* <p>Due: {event.date} at {event.time}</p> */}
+          <p>{moment(event.timestamp).fromNow()}</p>
         </div>
       </div>
     

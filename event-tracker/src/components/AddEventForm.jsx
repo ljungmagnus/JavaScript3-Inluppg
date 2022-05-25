@@ -1,8 +1,12 @@
 import axios from 'axios'
 import { useState, useCallback } from 'react'
+import moment from 'moment'
+import { useNavigate } from 'react-router-dom'
 
 const AddEventForm = () => {
   
+  const navigate = useNavigate()
+
   const [formData, setFormData] = useState({
     title: '',
     date: '',
@@ -77,11 +81,27 @@ const AddEventForm = () => {
 
   const handleSub = e => {
     e.preventDefault()
-    
+
     const isValid = validateForm(formData)
+    
     // om formuläret är ok skapa nytt event
     if(isValid) {
-      addNewEvent(formData)
+      
+      //Merge ihop datum och tid och skapar ett date object
+      const timeAndDate = moment(formData.date + ' ' + formData.time)
+      console.log(timeAndDate)
+      
+      //Tar textsträngen som representerar ett datum och returnerar en siffra i antalet millisekunder från 1 Jan 1970.
+      const timestamp = Date.parse(timeAndDate)
+      console.log(timestamp)
+      
+      //Kontroll
+      // const d = new Date(timestamp)
+      // console.log(d.toString())
+      const newEvent = {...formData, timestamp }
+      addNewEvent(newEvent)
+      navigate("/")
+      
     }
     
   }
@@ -92,7 +112,7 @@ const AddEventForm = () => {
       <div className='event-header'>
         <button type="button" className='dropbtn'></button>
         <h1>Add Event</h1>
-        <button type="button" className='btn btn-sm'>x</button>
+        <button onClick={() => navigate(-1)} type="button" className='btn btn-sm'>x</button>
       </div>
       <div className="input-group">
         <label htmlFor="title">Title:</label>
